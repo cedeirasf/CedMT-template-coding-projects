@@ -90,6 +90,12 @@ The versioning workflow contains the commands to generate a new release. This re
 
 The file shows you a simple build step and package.
 
+## Gitignore
+
+`/.gitignore`
+
+This file is empty. Replace the content with what you think is more convenient.
+
 ## Others
 
 The rest of the files usually don't require modifications. Implements defaults and typical workflows.
