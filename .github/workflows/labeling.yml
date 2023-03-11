@@ -1,4 +1,4 @@
-name: Labels Test
+name: Labeling
 
 on:
   pull_request:
