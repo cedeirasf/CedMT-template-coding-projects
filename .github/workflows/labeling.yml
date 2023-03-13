@@ -10,6 +10,7 @@ jobs:
     name: Assign and test labels from conventional-commits
     if: github.event.pull_request.merged == false
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v3
         with:
@@ -52,5 +53,5 @@ jobs:
           none: question, wontfix, invalid
           some: fix, feature, BREAKING CHANGE
           request-review: true
-          request-review-header: '**:bookmark: verify-labels-action**'
+          request-review-header: "**:bookmark: verify-labels-action**"
           github-token: ${{ secrets.GITHUB_TOKEN }}
