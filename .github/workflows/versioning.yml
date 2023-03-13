@@ -3,7 +3,7 @@ name: Versioning
 on:
   push:
     branches:
-      - 'main'
+      - "main"
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -11,6 +11,10 @@ jobs:
   versioning:
     name: Versioning
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      statuses: write
     outputs:
       version: ${{ steps.semver.outputs.next }}
     steps:
