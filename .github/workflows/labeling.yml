@@ -33,6 +33,9 @@ jobs:
               - type: 'breaking_change'
                 nouns: ['BREAKING CHANGE', 'BREAKING', 'MAJOR']
                 labels: ['BREAKING CHANGE']
+              - type: 'refactor'
+                nouns: ['refactor', 'refact', 'refac', 'Refactor', 'Refact', 'Refac']
+                labels: ['refactor', 'fix']
               - type: 'dependencies'
                 nouns: ['dependencies','dependencie','depends','depend','deps','dep','build(deps)','build(deps-dev)']
                 labels: ['build','dependencies','fix']
