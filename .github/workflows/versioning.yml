@@ -32,7 +32,7 @@ jobs:
           branch: main
           majorList: BREAKING CHANGE, BREAKING, MAJOR
           minorList: FEATURE, Feature, feature, FEAT, Feat, feat
-          patchList: FIX, Fix, fix, FIXED, Fixed, fixed, config, conf, cofiguration, configure, build, rebuild, doc, docu, document, documentation, dependencies, dependencie, depends, deps, dep, build(deps), build(deps-dev)
+          patchList: FIX, Fix, fix, FIXED, Fixed, fixed, config, conf, cofiguration, configure, build, rebuild, doc, docu, document, documentation, dependencies, dependencie, depends, deps, dep, build(deps), build(deps-dev), Refactor, Refact, Refac, refactor, refact, refac
           patchAll: false
 
       - name: Push tags
