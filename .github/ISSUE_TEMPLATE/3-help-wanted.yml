@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this help wanted issue!
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Describe the help needed
