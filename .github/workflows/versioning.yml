@@ -64,6 +64,9 @@ jobs:
       - name: Create Release from PR
         id: create-release-from-pr
         if: github.event.head_commit.committer.username == 'web-flow'
+        env:
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use this token if you don't want trigger other workflows before the release creation
+          GH_TOKEN: ${{ secrets.GH_PROJECT_AUTOMATION }} # Use this token if you want trigger other workflows before the release creation, for example, to create a package file
         run: |
           #!/bin/sh
 
@@ -78,6 +81,9 @@ jobs:
       - name: Create Release from Commits
         id: create-release-from-commits
         if: github.event.head_commit.committer.username != 'web-flow'
+        env:
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use this token if you don't want trigger other workflows before the release creation
+          GH_TOKEN: ${{ secrets.GH_PROJECT_AUTOMATION }} # Use this token if you want trigger other workflows before the release creation, for example, to create a package file
         run: |
           #!/bin/sh
 
