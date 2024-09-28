@@ -31,7 +31,7 @@ jobs:
                 nouns: ['FEATURE', 'Feature', 'feature', 'FEAT', 'Feat', 'feat']
                 labels: ['enhancement', 'versioning/minor']
               - type: 'breaking_change'
-                nouns: ['BREAKING CHANGE', 'BREAKING', 'MAJOR']
+                nouns: ['BREAKING CHANGE', 'BREAKING', 'BREAK', 'breaking change', 'breaking', 'break', 'MAJOR']
                 labels: ['BREAKING CHANGE', 'versioning/major']
               - type: 'refactor'
                 nouns: ['Refactor', 'Refact', 'Refac', 'refac', 'refact', 'refactor', 'REFAC', 'REFACT', 'REFACTOR', 'refacs', 'refacts', 'refactors', 'REFACS', 'REFACTS', 'REFACTORS']
