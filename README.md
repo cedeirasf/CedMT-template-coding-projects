@@ -102,19 +102,10 @@ The PAT token must have permissions for:
   - [x] public_repo
   - [x] repo:invite
   - [x] security_events
-- [x] workflow
 - [x] admin:org
   - [x] write:org
   - [x] read:org
   - [x] manage_runners:org
-- [ ] admin:repo_hook
-  - [ ] write:repo_hook
-  - [ ] read:repo_hook
-- [ ] notifications
-- [ ] user
-  - [ ] read:user
-  - [ ] user:email
-  - [ ] user:follow
 - [x] project
   - [x] read:project
 
