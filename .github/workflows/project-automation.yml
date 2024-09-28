@@ -29,7 +29,7 @@ env:
   STATUS_IN_REVIEW: In review
   STATUS_DONE: Done
   STATUS_TRASH: Trash
-  STATUS_EMPTY: ""
+  STATUS_EMPTY: No Status
 
   PROJECT_NAME: ""
 
