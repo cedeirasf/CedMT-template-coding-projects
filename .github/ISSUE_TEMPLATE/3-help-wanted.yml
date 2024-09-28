@@ -1,6 +1,6 @@
 name: Help Wanted
 description: Request help or suggest a topic to discuss
-title: ""
+title: "I need help with..."
 labels: ["help wanted", "lifecycle/needs-triage"]
 projects: ["mauroalderete/20"]
 body:

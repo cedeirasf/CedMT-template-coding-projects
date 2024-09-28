@@ -1,6 +1,6 @@
 name: Bug Report
 description: Create a report to help us improve
-title: ""
+title: "... is broken"
 labels: ["bug", "lifecycle/needs-triage"]
 projects: ["mauroalderete/20"]
 body:
