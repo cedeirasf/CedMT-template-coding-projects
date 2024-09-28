@@ -3,14 +3,12 @@ description: Suggest an idea for this project
 title: "As a [type of user], I want [a goal] so that [benefit]"
 labels: ["enhancement", "lifecycle/needs-triage"]
 projects: ["mauroalderete/20"]
-assignees:
-  - mauroalderete
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this feature request!
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Describe the feature
@@ -18,7 +16,7 @@ body:
       placeholder: I would like to see...
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: aditional
     attributes:
       label: Additional context

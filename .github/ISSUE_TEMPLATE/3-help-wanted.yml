@@ -3,14 +3,12 @@ description: Request help or suggest a topic to discuss
 title: ""
 labels: ["help wanted", "lifecycle/needs-triage"]
 projects: ["mauroalderete/20"]
-assignees:
-  - mauroalderete
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this help wanted issue!
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Describe the help needed

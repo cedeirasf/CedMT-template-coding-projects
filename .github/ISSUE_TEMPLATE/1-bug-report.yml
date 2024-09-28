@@ -3,14 +3,12 @@ description: Create a report to help us improve
 title: ""
 labels: ["bug", "lifecycle/needs-triage"]
 projects: ["mauroalderete/20"]
-assignees:
-  - mauroalderete
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Describe the bug
@@ -18,7 +16,7 @@ body:
       placeholder: I'm always frustrated when...
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: expected
     attributes:
       label: Expected behavior
@@ -26,7 +24,7 @@ body:
       placeholder: I would like to see...
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: actual
     attributes:
       label: Actual behavior
@@ -34,7 +32,7 @@ body:
       placeholder: Instead I saw...
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: aditional
     attributes:
       label: Additional context
