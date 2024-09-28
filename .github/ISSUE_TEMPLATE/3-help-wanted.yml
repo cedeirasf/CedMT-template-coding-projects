@@ -1,7 +1,7 @@
 name: Help Wanted
 description: Request help or suggest a topic to discuss
 title: ""
-labels: ["help wanted"]
+labels: ["help wanted", "lifecycle/needs-triage"]
 projects: ["mauroalderete/20"]
 assignees:
   - mauroalderete
