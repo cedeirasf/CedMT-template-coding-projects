@@ -110,11 +110,11 @@ The PAT token must have permissions for:
 - [x] admin:repo_hook
   - [x] write:repo_hook
   - [x] read:repo_hook
-- [ ] notifications
-- [ ] user
-  - [ ] read:user
-  - [ ] user:email
-  - [ ] user:follow
+- [x] notifications
+- [x] user
+  - [x] read:user
+  - [x] user:email
+  - [x] user:follow
 - [x] project
   - [x] read:project
 
