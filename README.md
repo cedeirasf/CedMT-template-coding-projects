@@ -107,14 +107,14 @@ The PAT token must have permissions for:
   - [x] write:org
   - [x] read:org
   - [x] manage_runners:org
-- [x] admin:repo_hook
-  - [x] write:repo_hook
-  - [x] read:repo_hook
-- [x] notifications
-- [x] user
-  - [x] read:user
-  - [x] user:email
-  - [x] user:follow
+- [ ] admin:repo_hook
+  - [ ] write:repo_hook
+  - [ ] read:repo_hook
+- [ ] notifications
+- [ ] user
+  - [ ] read:user
+  - [ ] user:email
+  - [ ] user:follow
 - [x] project
   - [x] read:project
 
