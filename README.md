@@ -90,6 +90,34 @@ The versioning workflow contains the commands to generate a new release. This re
 
 The file shows you a simple build step and package.
 
+## Project Automation
+
+This template contains a `Project Automation` workflow to perform an issue status managment on project beta. For this workflows works correctly you need configure the secret `GH_PROJECT_AUTOMATION` with a **PAT token in classic mode**.
+
+The PAT token must have permissions for:
+
+- [x] repo
+  - [x] repo:status
+  - [x] repo_deployment
+  - [x] public_repo
+  - [x] repo:invite
+  - [x] security_events
+- [x] workflow
+- [x] admin:org
+  - [x] write:org
+  - [x] read:org
+  - [x] manage_runners:org
+- [x] admin:repo_hook
+  - [x] write:repo_hook
+  - [x] read:repo_hook
+- [x] notifications
+- [x] user
+  - [x] read:user
+  - [x] user:email
+  - [x] user:follow
+- [x] project
+  - [x] read:project
+
 ## Gitignore
 
 `/.gitignore`
