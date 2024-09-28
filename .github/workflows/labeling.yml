@@ -38,7 +38,6 @@ jobs:
                 labels: ['refactor', 'versioning/patch']
               - type: 'dependencies'
                 nouns: ['dependencies', 'dependencie', 'depends', 'depend', 'deps', 'dep', 'chore']
-                dependencies, dependencie, depends, depend, deps, dep, chore,
                 labels: ['dependencies', 'versioning/patch']
               - type: 'build'
                 nouns: ['build', 'rebuild']
