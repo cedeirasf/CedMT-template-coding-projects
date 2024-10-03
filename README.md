@@ -11,11 +11,8 @@
 [![Semantic Versioning: 2.0.0](https://img.shields.io/badge/Semantic--Versioning-2.0.0-a05f79?logo=semantic-release&logoColor=f97ff0)](https://semver.org/)
 
 [![Labeling](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/labeling.yml/badge.svg)](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/labeling.yml)
-[![Tests](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/tests.yml/badge.svg)](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/tests.yml)
-[![CodeQL](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/codeql-analysis.yml)
 [![Liberation](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/liberation.yml/badge.svg)](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/liberation.yml)
-[![Deploy Release](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/deploy-release.yml/badge.svg)](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/deploy-release.yml)
-[![Project Automation](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/project-automation.yml/badge.svg)](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/project-automation.yml)
+[![Project Automations](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/project-automation.yml/badge.svg)](https://github.com/cedeirasf/CedMT-template-coding-projects/actions/workflows/project-automation.yml)
 
 [Bug Report](./issues/new?assignees=&labels=bug%2Clifecycle%2Fneeds-triage&projects=cedeirasf%2F2&template=1-bug-report.yml&title=...+is+broken)
 ⭕
