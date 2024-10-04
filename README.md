@@ -1,4 +1,4 @@
-# coding-projects-template <!-- omit in toc -->
+# template-coding-projects <!-- omit in toc -->
 
 ***Template to coding projects that requires a conventional workflow***
 
@@ -74,7 +74,7 @@ Once you create a new repo based on this template, probably you would:
 - [ ] Configure `pull_request_template`
 - [ ] Configure dependabot
 - [ ] Update `README.md`
-  - [ ] Replace title `coding-projects-template` for the title in your repo.
+  - [ ] Replace title `template-coding-projects` for the title in your repo.
   - [ ] Update subtitle
   - [ ] After edit workflows, update badgets on header section
   - [ ] After edit ISSUE_TEMPLATES, update links on header section
