@@ -1,4 +1,4 @@
-# template-coding-projects <!-- omit in toc -->
+# CedMT-template-coding-projects <!-- omit in toc -->
 
 ***Template to coding projects that requires a conventional workflow***
 
@@ -24,9 +24,24 @@
 
 </div>
 
-- [✋ Introducing `template-coding-projects`](#-introducing-template-coding-projects)
-- [❓ How to use this template](#-how-to-use-this-template)
-- [🔥 What to do After Using `template-coding-projects`](#-what-to-do-after-using-template-coding-projects)
+- [✋ Introducción `CedMT-template-coding-projects`](#-introducción-cedmt-template-coding-projects)
+- [❓ Cómo usar esta plantilla](#-cómo-usar-esta-plantilla)
+- [🔥 Qué hacer después de usar `CedMT-template-coding-projects`](#-qué-hacer-después-de-usar-cedmt-template-coding-projects)
+  - [1. Clonar el repositorio](#1-clonar-el-repositorio)
+  - [2. Agregar el versionado inicial](#2-agregar-el-versionado-inicial)
+  - [3. Configurar el repositorio en GitHub](#3-configurar-el-repositorio-en-github)
+    - [Configuración de GitHub Actions](#configuración-de-github-actions)
+    - [Agregar el secreto `GH_PROJECT_AUTOMATION`](#agregar-el-secreto-gh_project_automation)
+    - [Proteger la rama `main`](#proteger-la-rama-main)
+  - [4. Completar `.gitignore`](#4-completar-gitignore)
+  - [5. Actualizar `CODEOWNERS`](#5-actualizar-codeowners)
+  - [6. Actualizar `ISSUE_TEMPLATES`](#6-actualizar-issue_templates)
+  - [7. Actualizar `pull_request_template`](#7-actualizar-pull_request_template)
+  - [8. Configurar dependabot](#8-configurar-dependabot)
+  - [9. Actualizar `LICENSE.md`](#9-actualizar-licensemd)
+  - [10. Revisar `CODE_OF_CONDUCT.md`](#10-revisar-code_of_conductmd)
+  - [11. Preparar los workflows](#11-preparar-los-workflows)
+  - [12. Actualizar `README.md`](#12-actualizar-readmemd)
 - [Workflows](#workflows)
   - [CodeQL](#codeql)
   - [Tests](#tests)
@@ -34,57 +49,51 @@
   - [Liberation](#liberation)
   - [Project Automation](#project-automation)
   - [Deploy Release](#deploy-release)
-- [Code of conduct](#code-of-conduct)
-- [License](#license)
-- [Gitignore](#gitignore)
 
 &nbsp;
 
-## ✋ Introducing `template-coding-projects`
+## ✋ Introducción `CedMT-template-coding-projects`
 
-This repository template contains the essential elements used in various projects to many stacks.
+Este template contiene los elementos esenciales utilizados en varios proyectos de diferentes stacks.
 
-- Includes workflows to handle labeling, versioning, testing, release and deployment.
-- Contains a private license, a basic contributing redaction, and a covenant code of conduct.
-- Implements a definition to generate release notes.
-- Defines templates to the three issues types (bug, features, help wanted) and a pull request template.
-- Additional prepare a dependabot script.
-- Schedule a CodeQL Analysis.
-- And include CODEOWNERS
+- Incluye flujos de trabajo para manejar etiquetado, versionado, pruebas, liberación y despliegue.
+- Contiene una licencia privada, una redacción básica de contribución y un código de conducta del pacto.
+- Implementa una definición para generar notas de lanzamiento.
+- Define plantillas para los tres tipos de problemas (bug, características, ayuda solicitada) y una plantilla de solicitud de extracción.
+- Adicionalmente prepara un script de dependabot.
+- Programa un análisis de CodeQL.
+- E incluye CODEOWNERS
 
-> Many of the configuration files in this repository are not working yet. Just consist of a sample definition of the configuration. You may adapt these files depending on your objectives. You should pay attention to subsequent indications to know how you do it.
+> [!WARNING]
+> Muchos de los archivos de configuración en este repositorio no funcionarán apenas clone su proyecto ya que requieren que los configure de acuerdo a sus necesidades y objetivos. Debe prestar atención a las indicaciones posteriores para saber cómo hacerlo.
 
-## ❓ How to use this template
+## ❓ Cómo usar esta plantilla
 
-To use this template, click the button **Use this template** shown in the upper section on [root of repository](https://github.com/cedeirasf/CedMT-template-coding-projects), then create a new repository.
+Para usar este template, haga clic en el botón **Use this template** que se muestra en la sección superior en la [raíz del repositorio](https://github.com/cedeirasf/CedMT-template-coding-projects), luego cree un nuevo repositorio.
 
-Another way is starting the process of creating a new repository and selecting this template in the upper section.
+Otra forma es iniciar el proceso de creación de un nuevo repositorio y seleccionar esta plantilla en la sección superior.
 
-## 🔥 What to do After Using `template-coding-projects`
+## 🔥 Qué hacer después de usar `CedMT-template-coding-projects`
 
-This template contains many files. A lot of them require special attention.
+Esta plantilla contiene muchos archivos. Muchos de ellos requieren atención especial. A continuación, se muestra una lista de tareas que probablemente necesitará realizar después de crear un nuevo repositorio basado en esta plantilla.
 
-Once you create a new repo based on this template, probably you would:
+### 1. Clonar el repositorio
 
-- [ ] Remove or disable the workflows that you are not planning use yet.
-- [ ] Update `CODEOWNERS`.
-- [ ] Update the `CODE_OF_CONDUCT` email.
-- [ ] Update `LICENSE`.
-- [ ] Edit the `ISSUE_TEMPLATES`, especially to relink the project reference
-- [ ] Configure `pull_request_template`
-- [ ] Configure dependabot
-- [ ] Update `README.md`
-  - [ ] Replace title `template-coding-projects` for the title in your repo.
-  - [ ] Update subtitle
-  - [ ] After edit workflows, update badgets on header section
-  - [ ] After edit ISSUE_TEMPLATES, update links on header section
-  - [ ] Remove sections that talk about template
+Una vez que haya creado un nuevo repositorio basado en esta plantilla, puede clonarlo en su máquina local y comenzar a configurarlo.
 
-> [!NOTE]
-> You can this checklist directly in your first issue to start setup your new repo.
+```bash
+git clone <repo-url>
+cd <repo-name>
+```
 
-After clone the new repository created from this template, you should create a new tag for the first version. You can do it with the following commands:
-  
+### 2. Agregar el versionado inicial
+
+Despues de clonar el nuevo repositorio creado a partir de esta plantilla, deberías crear una nueva etiqueta para la primera versión.
+
+Este paso es importante porque el flujo de trabajo de liberación depende de la existencia de una etiqueta para funcionar correctamente.
+
+Puedes hacerlo con los siguientes comandos:
+
 ```bash
 git tag v1.0.0
 git tag v1.0
@@ -92,54 +101,146 @@ git tag v1
 git push --tags
 ```
 
-Later, in your repository settings could set some configurations compatible with the mode of work the github workflows included in this template:
+> [!NOTE]
+> Puede usar cualquier versión que desee. En este caso, se utilizó `v1.0.0`. Si desea usar una versión diferente, asegúrese de que sea compatible con [Semantic Versioning](https://semver.org/).
 
-- Enable `Allow GitHub Actions to create and approve pull request` and select `Read and write permissions` in `Settings > Actions > General > Workflow Permissions`.
-  See [Workflow Permissions](https://private-user-images.githubusercontent.com/171866006/373761519-8c3944e6-de26-4fa5-a9cd-9365485c439c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMjEwNDcsIm5iZiI6MTczNTIyMDc0NywicGF0aCI6Ii8xNzE4NjYwMDYvMzczNzYxNTE5LThjMzk0NGU2LWRlMjYtNGZhNS1hOWNkLTkzNjU0ODVjNDM5Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMzQ1NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zN2IyZTRlMjk2MjE1ZmVlZDdjZWMxMjdhZDYwMDIwN2FmOTQ4ZTVmZjYzMmU3MzhiY2VkYTQ1ZTlkNThjY2U4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.i0TbxNI8aQsNcjHShTbkUvT6hNvWmN1VXHElFT0L5Ig)
-- Add actions secret `GH_PROJECT_AUTOMATION` in `Settings > Secrets and variables > Actions` with next permissions:
-  - [x] repo
-    - [x] repo:status
-    - [x] repo_deployment
-    - [x] public_repo
-    - [x] repo:invite
-    - [x] security_events
-  - [x] admin:org
-    - [x] write:org
-    - [x] read:org
-    - [x] manage_runners:org
-  - [x] project
-    - [x] read:project
-- Restrict PR resolving only merging strategy in `Settings > General > Pull Request`:
-  - [x] Allow merge commits
-  - [ ] Allow squash merging
-  - [ ] Allow rebase merging
-- Protect you `main` branch in `Settings > Rules > Rulesets` with:
-  - Bypass list:
-    - Organization admin
-    - Maintain
-  - Target
-    - Default
-  - Branch rules
-    - [ ] Restrict creations
-    - [ ] Restrict updates
-    - [x] Restrict deletions
-    - [x] Require Linear history
-    - [ ] Require deployments to succeed
-    - [ ] Require signed commits *recommended enable*
-    - [x] Require a pull request before merging
-      - Required approvals: 2 *labeling workflow add should send an approval*
-      - [ ] Dismiss stale pull request approvals when new commits are pushed
-      - [x] Require review from Code Owners
-      - [x] Require approval of the most recent reviewable push
-      - [x] Require conversation resolution before merging
-    - [x] Require status checks to pass
-      - [x] Require branches to be up to date before merging
-      - [x] Do not require status checks on creation
-      - Status checks that are required
-        - Unit tests
-        - call-labeling-workflow / Assign and test labels from conventional-commits
-    - [x] Block force pushes
-    - [ ] Require code scanning results
+### 3. Configurar el repositorio en GitHub
+
+Vaya a la sección de configuración de su repositorio en GitHub `Settings` y realice las siguientes configuraciones:
+
+#### Configuración de GitHub Actions
+
+Habilitar `Allow GitHub Actions to create and approve pull request` y seleccionar `Read and write permissions` en `Settings > Actions > General > Workflow Permissions`.
+
+Este secreto es necesario para que el flujo de trabajo de automatización de proyectos funcione correctamente.
+
+![Workflow Permissions](https://private-user-images.githubusercontent.com/171866006/373761519-8c3944e6-de26-4fa5-a9cd-9365485c439c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMjEwNDcsIm5iZiI6MTczNTIyMDc0NywicGF0aCI6Ii8xNzE4NjYwMDYvMzczNzYxNTE5LThjMzk0NGU2LWRlMjYtNGZhNS1hOWNkLTkzNjU0ODVjNDM5Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMzQ1NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zN2IyZTRlMjk2MjE1ZmVlZDdjZWMxMjdhZDYwMDIwN2FmOTQ4ZTVmZjYzMmU3MzhiY2VkYTQ1ZTlkNThjY2U4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.i0TbxNI8aQsNcjHShTbkUvT6hNvWmN1VXHElFT0L5Ig)
+
+#### Agregar el secreto `GH_PROJECT_AUTOMATION`
+
+Agregar el secreto `GH_PROJECT_AUTOMATION` en `Settings > Secrets and variables > Actions` con los siguientes permisos:
+
+- [x] repo
+  - [x] repo:status
+  - [x] repo_deployment
+  - [x] public_repo
+  - [x] repo:invite
+  - [x] security_events
+- [x] admin:org
+  - [x] write:org
+  - [x] read:org
+  - [x] manage_runners:org
+- [x] project
+  - [x] read:project
+
+> [!NOTE]
+> Lo más probable es que el token `GH_PROJECT_AUTOMATION` ya este creado, consulte con el PM del proyecto para obtenerlo.
+
+#### Proteger la rama `main`
+
+Proteger la rama `main` en `Settings > Rules > Rulesets` con las siguientes configuraciones:
+
+- Bypass list:
+  - Organization admin
+  - Maintain
+- Target
+  - Default
+- Branch rules
+  - [ ] Restrict creations
+  - [ ] Restrict updates
+  - [x] Restrict deletions
+  - [x] Require Linear history
+  - [ ] Require deployments to succeed
+  - [ ] Require signed commits *recommended enable*
+  - [x] Require a pull request before merging
+    - Required approvals: 2 *labeling workflow add should send an approval*
+    - [ ] Dismiss stale pull request approvals when new commits are pushed
+    - [x] Require review from Code Owners
+    - [x] Require approval of the most recent reviewable push
+    - [x] Require conversation resolution before merging
+  - [x] Require status checks to pass
+
+> [!NOTE]
+> Estas configuraciones pueden ser diferentes según sus necesidades. Las opciones que se muestran aquí son las adecuadas para el flujo de trabajo en el proyecto `CedMT`.
+> Puede encontrar más información sobre cómo configurar estas opciones en la [documentación oficial de GitHub](https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches).
+
+### 4. Completar `.gitignore`
+
+El archivo `.gitignore` debe contener una lista de archivos y directorios que se ignorarán en el control de versiones de Git. Este archivo se encuentra en la raíz del repositorio y debe completarse dependiendo de las necesidades de su proyecto.
+
+### 5. Actualizar `CODEOWNERS`
+
+El archivo `CODEOWNERS` contiene una lista de personas que son responsables de revisar el código en el repositorio. Debe actualizar este archivo con las personas adecuadas.
+
+Por defecto, el archivo `CODEOWNERS` contiene el valor adecuado para cualquier repositorio del proyecto `CedMT`.
+
+```plaintext
+* @cedeirasf/CedMT
+```
+
+> [!NOTE]
+> Encontrará más información sobre cómo configurar este archivo en la [documentación oficial de GitHub](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners).
+
+### 6. Actualizar `ISSUE_TEMPLATES`
+
+Las plantillas de problemas se encuentran en el directorio `.github/ISSUE_TEMPLATES`. Debe actualizar estas plantillas con la información adecuada para su proyecto.
+
+Por defecto, las plantillas de problemas contienen el valor adecuado para cualquier repositorio del proyecto `CedMT`, includo el enlace al proyecto.
+
+> [!NOTE]
+> Encontrará más información sobre cómo configurar estas plantillas en la [documentación oficial de GitHub](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-issues/creating-an-issue-template-for-your-repository).
+
+### 7. Actualizar `pull_request_template`
+
+El archivo `pull_request_template.md` contiene una plantilla para solicitudes de extracción. Debe actualizar esta plantilla con la información adecuada para su proyecto.
+
+Por defecto, la plantilla de solicitud de extracción contiene el valor adecuado para cualquier repositorio del proyecto `CedMT`.
+
+> [!NOTE]
+> Encontrará más información sobre cómo configurar esta plantilla en la [documentación oficial de GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository).
+
+### 8. Configurar dependabot
+
+El archivo `.github/dependabot.yml` contiene la configuración de dependabot. Para más información sobre cómo configurar dependabot, consulte la [documentación oficial de GitHub](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates).
+
+### 9. Actualizar `LICENSE.md`
+
+El archivo `LICENSE.md` contiene la licencia del proyecto. Puede eliminar el archivo actual para indicar que el proyecto no tiene licencia o puede reemplazarlo por una licencia diferente, por ejemplo [MIT](https://choosealicense.com/licenses/mit/).
+
+> [!NOTE]
+> Consultar con el PM del proyecto para saber qué licencia usar.
+
+### 10. Revisar `CODE_OF_CONDUCT.md`
+
+El archivo `CODE_OF_CONDUCT.md` contiene el código de conducta del proyecto. Si esta usando el código de conducta para otro proyecto, debe actualizar el email de contacto.
+
+### 11. Preparar los workflows
+
+Hay varios flujos de trabajo en este repositorio, algunos pueden ser eliminados si no son necesarios. Otros deben ser configurados para que funcionen correctamente. Dependerá de las necesidades de su proyecto.
+
+Por lo general, para proyectos `.NET` o `Node.js`, el flujo de trabajo de pruebas es el más importante.
+
+Flujos de trabajo como `dependabot` o `codeql` pueden ser eliminados si no son necesarios.
+
+> [!NOTE]
+> Consulte la sección de [Workflows](#workflows) para obtener más información sobre cómo configurar cada uno de ellos.
+
+### 12. Actualizar `README.md`
+
+El archivo `README.md` contiene información sobre el proyecto. Debe actualizar este archivo con la información adecuada para su proyecto.
+
+- Replace title `CedMT-template-coding-projects` for the title in your repo.
+- Update subtitle
+- After edit workflows, update badgets on header section
+- After edit ISSUE_TEMPLATES, update links on header section
+- Remove sections that talk about template
+
+- Reemplace el título `CedMT-template-coding-projects` por el título de su repositorio.
+- Actualice el subtítulo
+- Después de editar los flujos de trabajo, actualice los badgets en la sección del encabezado
+- Después de editar ISSUE_TEMPLATES, actualice los enlaces en la sección del encabezado
+- Elimine las secciones que hablan sobre la plantilla
+- Redacte su propio contenido en el archivo `README.md`.
 
 ## Workflows
 
@@ -202,22 +303,3 @@ The PAT token must have permissions for:
 This workflows is a simple demo of how setup a simple deploy release when a new release is published by `liberation` workflow.
 
 For `deploy-release` was triggered is needed that `liberation` runs with a github token different that `secrets.GITHUB_TOKEN`.
-
-## Code of conduct
-
-`/CODE_OF_CONDUCT.md`
-
-This code is based on the covenant code. He is only required to specify an email address to the community to send his messages. Now, this email is [matchingtool@cedeira.com.ar](mailto:matchingtool@cedeira.com.ar).
-
-## License
-
-`/LICENSE`
-
-This license is a private personal license redacted by chatGPT. This is only an example. I recommend changing this license to other than to be attached better to your needs.
-You can replace it with any Open License offered by GitHub, too.
-
-## Gitignore
-
-`/.gitignore`
-
-This file is empty. Replace the content with what you think is more convenient.
