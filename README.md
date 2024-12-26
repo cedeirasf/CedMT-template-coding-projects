@@ -85,7 +85,8 @@ Once you create a new repo based on this template, probably you would:
 
 Later, in your repository settings could set some configurations compatible with the mode of work the github workflows included in this template:
 
-- Enable `Allow GitHub Actions to create and approve pull request` in `Settings > Actions > General > Workflow Permissions`.
+- Enable `Allow GitHub Actions to create and approve pull request` and select `Read and write permissions` in `Settings > Actions > General > Workflow Permissions`.
+  See [Workflow Permissions](https://private-user-images.githubusercontent.com/171866006/373761519-8c3944e6-de26-4fa5-a9cd-9365485c439c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMjEwNDcsIm5iZiI6MTczNTIyMDc0NywicGF0aCI6Ii8xNzE4NjYwMDYvMzczNzYxNTE5LThjMzk0NGU2LWRlMjYtNGZhNS1hOWNkLTkzNjU0ODVjNDM5Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMzQ1NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zN2IyZTRlMjk2MjE1ZmVlZDdjZWMxMjdhZDYwMDIwN2FmOTQ4ZTVmZjYzMmU3MzhiY2VkYTQ1ZTlkNThjY2U4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.i0TbxNI8aQsNcjHShTbkUvT6hNvWmN1VXHElFT0L5Ig)
 - Add actions secret `GH_PROJECT_AUTOMATION` in `Settings > Secrets and variables > Actions` with next permissions:
   - [x] repo
     - [x] repo:status
