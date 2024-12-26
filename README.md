@@ -83,6 +83,15 @@ Once you create a new repo based on this template, probably you would:
 > [!NOTE]
 > You can this checklist directly in your first issue to start setup your new repo.
 
+After clone the new repository created from this template, you should create a new tag for the first version. You can do it with the following commands:
+  
+```bash
+git tag v1.0.0
+git tag v1.0
+git tag v1
+git push --tags
+```
+
 Later, in your repository settings could set some configurations compatible with the mode of work the github workflows included in this template:
 
 - Enable `Allow GitHub Actions to create and approve pull request` and select `Read and write permissions` in `Settings > Actions > General > Workflow Permissions`.
