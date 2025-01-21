@@ -42,6 +42,7 @@
   - [10. Revisar `CODE_OF_CONDUCT.md`](#10-revisar-code_of_conductmd)
   - [11. Preparar los workflows](#11-preparar-los-workflows)
   - [12. Actualizar `README.md`](#12-actualizar-readmemd)
+  - [13. Eliminar carpeta `Assets`](#13-eliminar-carpeta-assets)
 - [Workflows](#workflows)
   - [CodeQL](#codeql)
   - [Tests](#tests)
@@ -223,6 +224,10 @@ El archivo `README.md` contiene información sobre el proyecto. Debe actualizar 
 - Después de editar ISSUE_TEMPLATES, actualice los enlaces en la sección del encabezado
 - Elimine las secciones que hablan sobre la plantilla
 - Redacte su propio contenido en el archivo `README.md`.
+
+### 13. Eliminar carpeta `Assets` 
+
+La carpeta `Assets` contiene diferentes configuraciones y archivos que una vez creado el proyecto, ya no son necesarios.
 
 ## Workflows
 
