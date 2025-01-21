@@ -138,27 +138,9 @@ Agregar el secreto `GH_PROJECT_AUTOMATION` en `Settings > Secrets and variables 
 
 #### Proteger la rama `main`
 
-Proteger la rama `main` en `Settings > Rules > Rulesets` con las siguientes configuraciones:
+Proteger la rama `main` en `Settings > Rules > Rulesets` importando el archivo [./Assets/MainRules.json](./Assets/MainRules.json)
 
-- Bypass list:
-  - Organization admin
-  - Maintain
-- Target
-  - Default
-- Branch rules
-  - [ ] Restrict creations
-  - [ ] Restrict updates
-  - [x] Restrict deletions
-  - [x] Require Linear history
-  - [ ] Require deployments to succeed
-  - [ ] Require signed commits *recommended enable*
-  - [x] Require a pull request before merging
-    - Required approvals: 2 *labeling workflow add should send an approval*
-    - [ ] Dismiss stale pull request approvals when new commits are pushed
-    - [x] Require review from Code Owners
-    - [x] Require approval of the most recent reviewable push
-    - [x] Require conversation resolution before merging
-  - [x] Require status checks to pass
+
 
 > [!NOTE]
 > Estas configuraciones pueden ser diferentes según sus necesidades. Las opciones que se muestran aquí son las adecuadas para el flujo de trabajo en el proyecto `CedMT`.
