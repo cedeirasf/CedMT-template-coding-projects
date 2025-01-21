@@ -138,9 +138,9 @@ Agregar el secreto `GH_PROJECT_AUTOMATION` en `Settings > Secrets and variables 
 
 #### Proteger la rama `main`
 
-Proteger la rama `main` en `Settings > Rules > Rulesets` importando el archivo [./Assets/MainRules.json](./Assets/MainRules.json)
+Proteger la rama `main` importando el archivo [./Assets/MainRules.json](./Assets/MainRules.json) en `Settings > Rules > Rulesets`.
 
-
+![./Assets/Images/RuleSetImport.png](./Assets/Images/RuleSetImport.png)
 
 > [!NOTE]
 > Estas configuraciones pueden ser diferentes según sus necesidades. Las opciones que se muestran aquí son las adecuadas para el flujo de trabajo en el proyecto `CedMT`.
