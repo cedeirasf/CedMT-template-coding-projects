@@ -42,6 +42,7 @@
   - [10. Revisar `CODE_OF_CONDUCT.md`](#10-revisar-code_of_conductmd)
   - [11. Preparar los workflows](#11-preparar-los-workflows)
   - [12. Actualizar `README.md`](#12-actualizar-readmemd)
+  - [13. Eliminar carpeta `Assets`](#13-eliminar-carpeta-assets)
 - [Workflows](#workflows)
   - [CodeQL](#codeql)
   - [Tests](#tests)
@@ -138,27 +139,9 @@ Agregar el secreto `GH_PROJECT_AUTOMATION` en `Settings > Secrets and variables 
 
 #### Proteger la rama `main`
 
-Proteger la rama `main` en `Settings > Rules > Rulesets` con las siguientes configuraciones:
+Proteger la rama `main` importando el archivo [./Assets/MainRules.json](./Assets/MainRules.json) en `Settings > Rules > Rulesets`.
 
-- Bypass list:
-  - Organization admin
-  - Maintain
-- Target
-  - Default
-- Branch rules
-  - [ ] Restrict creations
-  - [ ] Restrict updates
-  - [x] Restrict deletions
-  - [x] Require Linear history
-  - [ ] Require deployments to succeed
-  - [ ] Require signed commits *recommended enable*
-  - [x] Require a pull request before merging
-    - Required approvals: 2 *labeling workflow add should send an approval*
-    - [ ] Dismiss stale pull request approvals when new commits are pushed
-    - [x] Require review from Code Owners
-    - [x] Require approval of the most recent reviewable push
-    - [x] Require conversation resolution before merging
-  - [x] Require status checks to pass
+![./Assets/Images/RuleSetImport.png](./Assets/Images/RuleSetImport.png)
 
 > [!NOTE]
 > Estas configuraciones pueden ser diferentes según sus necesidades. Las opciones que se muestran aquí son las adecuadas para el flujo de trabajo en el proyecto `CedMT`.
@@ -241,6 +224,10 @@ El archivo `README.md` contiene información sobre el proyecto. Debe actualizar 
 - Después de editar ISSUE_TEMPLATES, actualice los enlaces en la sección del encabezado
 - Elimine las secciones que hablan sobre la plantilla
 - Redacte su propio contenido en el archivo `README.md`.
+
+### 13. Eliminar carpeta `Assets` 
+
+La carpeta `Assets` contiene diferentes configuraciones y archivos que una vez creado el proyecto, ya no son necesarios.
 
 ## Workflows
 
